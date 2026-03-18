@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Robot Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-animation"></div>
+    <div id="touch-effects"></div>
+
+    <div class="container">
+
+        <div class="animation-box">
+            <div class="avatar">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <h2 id="title">Login</h2>
+
+            <form id="loginForm">
+                <input type="text" id="loginUser" placeholder="Username" required>
+                <input type="password" id="loginPass" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="registerForm" style="display:none;">
+                <input type="text" id="regUser" placeholder="Username" required>
+                <input type="email" id="regEmail" placeholder="Email" required>
+                <input type="password" id="regPass" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <div id="msg" class="msg"></div>
+
+            <p class="switch">
+                <span id="toggleText">Don't have an account?</span>
+                <button type="button" onclick="toggleForm()">Register</button>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js">
+        function downloadPDF() {
+            setTimeout(() => {
+                window.focus();
+                window.print();
+            }, 200);
+        }
+    </script>
+</body>
+
+</html>
